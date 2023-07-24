@@ -1,15 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+// import App from './App.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import './index.css'
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './Components/Layout/Main.jsx';
 import Home from './Components/Home/Home.jsx';
 import Login from './Components/Login/Login.jsx';
 import Register from './Components/Register/Register.jsx';
+import RegisterRBS from './RegisterRBS/RegisterRBS.jsx';
 
 
 const router = createBrowserRouter([
@@ -28,6 +30,10 @@ const router = createBrowserRouter([
       {
         path:"/register",
         element: <Register></Register>
+      },
+         {
+        path:"/register-rbs",
+        element: <RegisterRBS></RegisterRBS>
       }
     ]
   },
